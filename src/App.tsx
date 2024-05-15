@@ -7,7 +7,7 @@ import { AddContact } from "./components/AddContact";
 import { useState } from "react";
 
 function App(): JSX.Element {
-  const [contactList, setContactList] = useState([]);
+  const [contactList, setContactList] = useState<Contact[]>([]);
 
   return (
     <>

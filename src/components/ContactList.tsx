@@ -1,13 +1,4 @@
 import { useState, useEffect } from "react";
-type Contact = {
-  name: string;
-  email: string;
-};
-
-type Props = {
-  contactList: Contact[];
-  setContactList: React.Dispatch<React.SetStateAction<Contact[]>>;
-};
 
 export function ContactList(props: Props): JSX.Element {
   const [numberOfContacts, setNumberOfContacts] = useState<number>();

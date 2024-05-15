@@ -1,15 +1,5 @@
 import React, { useState } from "react";
 
-type Contact = {
-  name: string;
-  email: string;
-};
-
-type Props = {
-  contactList: Contact[];
-  setContactList: React.Dispatch<React.SetStateAction<Contact[]>>;
-};
-
 export function AddContact(props: Props): JSX.Element {
   const [newContact, setNewContact] = useState<Contact>({
     name: "",
